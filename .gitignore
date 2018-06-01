@@ -4,6 +4,8 @@ dist/
 npm-debug.log
 yarn-error.log
 public/dll
+devBuild/
+entryBuild/
 
 # Editor directories and files
 .idea
