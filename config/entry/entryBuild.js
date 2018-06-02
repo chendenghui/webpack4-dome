@@ -1,10 +1,10 @@
 const fs = require("fs");
 const path = require("path");
-const entry = require('./entry');
-const rimraf = require('rimraf');
+const entry = require("./entry");
+const rimraf = require("rimraf");
 
 //定义entryBuild
-const entryBuildPath = path.resolve(__dirname, '../../entryBuild');
+const entryBuildPath = path.resolve(__dirname, "../../entryBuild");
 //删除entryBuild
 rimraf.sync(entryBuildPath);
 //创建entryBuild
@@ -16,9 +16,9 @@ import Header from '../app/component/common/Header';
 ReactDOM.render([<Header key="Header"/>,<Index key="Index"/>],document.getElementById('app'));`;
 /*生成webpack entry 入口文件*/
 entry.map((data) => {
-    fs.writeFile(entryBuildPath + '/' + data.name + '.js', entryContent(data), 'utf8', function (err) {
-        if (err) {
-            return console.log(err);
-        }
-    });
+	fs.writeFile(entryBuildPath + "/" + data.name + ".js", entryContent(data), "utf8", function (err) {
+		if (err) {
+			return console.log(err);
+		}
+	});
 });

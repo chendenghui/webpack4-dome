@@ -13,10 +13,11 @@
     "analyz": "NODE_ENV=production npm_config_report=true npm run build",
     "clean": "rimraf dist && mkdir dist",
     "eslint": "echo \"代码检测中...\" && eslint ./app *.js,.js --cache",
+    "lint": "eslint --ext .js src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "pre-commit": [
-    "eslint" 
+    "eslint"
   ],
   "keywords": [],
   "author": "",
@@ -52,7 +53,7 @@
     "eslint-plugin-flowtype": "^2.46.1",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react": "^7.8.2",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file": "^0.2.2",
     "file-loader": "^1.1.11",
