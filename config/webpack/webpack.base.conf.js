@@ -8,10 +8,9 @@ let config = {
     entry: newEntry,
     resolve: {
         extensions: [".js", ".json", ".jsx", ".css",".pcss"],
-        // alias: {
-            // react: path.resolve(__dirname, './node_modules/react'),
-            // 'react-dom': path.resolve(__dirname, './node_modules/react-dom')
-        //   }
+        alias: {
+            BizUtils: path.resolve(__dirname, 'app/utils'),
+          }
     }
 
 };
