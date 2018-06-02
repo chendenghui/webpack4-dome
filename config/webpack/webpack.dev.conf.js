@@ -98,15 +98,7 @@ let config = merge(baseWebpackConfig, {
 				loader: "style-loader?sourceMap!css-loader?sourceMap!postcss-loader?sourceMap",
 				exclude: /node_modules/
 			},
-			// {
-			//     test: /\.less$/,
-			//     use: ['style-loader', moduleCSSLoader, 'less-loader']
-			//   },
-			//   {
-			//     test: /\.(scss|sass)$/,
-			//     use: ['style-loader', 'css-loader', 'sass-loader']
-			//   },
-              
+	
 			{
 				test: /\.(png|jpg|gif|ttf|eot|woff|woff2|svg|swf)$/,
 				loader: "file-loader?name=[name].[ext]&outputPath=" + webpackFile.resource + "/"
