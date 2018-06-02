@@ -9,6 +9,7 @@ const baseWebpackConfig = require("./webpack.base.conf");
 const webpackFile = require('./webpack.file.conf');
 const entry = require("./webpack.entry.conf");
 const webpackCom = require("./webpack.com.conf");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 let config = merge(baseWebpackConfig, {
     /*设置生产环境*/
@@ -45,6 +46,7 @@ let config = merge(baseWebpackConfig, {
             }
         }
     },
+
     plugins: [
         // extract css into its own file
         new ExtractTextPlugin('css/[name].[md5:contenthash:hex:8].css'),
@@ -60,8 +62,10 @@ let config = merge(baseWebpackConfig, {
             },
             canPrint: true
         }),
+        new BundleAnalyzerPlugin()
     ],
     module: {
+      
         rules: [
             {
                 test: /\.(js|jsx)$/,
