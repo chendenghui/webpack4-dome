@@ -28,7 +28,7 @@ module.exports = {
       "react/jsx-filename-extension": "off",
       "react/prefer-stateless-function": "off",
       "no-console": "off",
-      "no-unused-vars": "warn"
+      "no-unused-vars": "warn",
       "no-path-concat": 1,
       "max-len": 0,//关闭单行字符长度限制
       //"no-path-concat": 0,//node中不能使用__dirname或__filename做路径拼接

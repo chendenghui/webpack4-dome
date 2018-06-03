@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 // 业务常用filter函数
 const WEEK_MAP = ['', '周一', '周二', '周三', '周四', '周五', '周六', '周日'];
 const filter = {};
