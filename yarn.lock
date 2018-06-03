@@ -4097,7 +4097,7 @@ ignore@^3.3.3, ignore@^3.3.5:
   version "3.3.8"
   resolved "http://registry.npm.taobao.org/ignore/download/ignore-3.3.8.tgz#3f8e9c35d38708a3a7e0e9abb6c73e7ee7707b2b"
 
-immutable@^3.7.4:
+immutable@^3.7.4, immutable@^3.8.2:
   version "3.8.2"
   resolved "http://registry.npm.taobao.org/immutable/download/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
 
@@ -5317,7 +5317,7 @@ mobx@^4.1.1:
   version "4.3.0"
   resolved "http://registry.npm.taobao.org/mobx/download/mobx-4.3.0.tgz#50a5e63fd0197a83c68166ff83ada45b65c859f8"
 
-moment@2.x, moment@^2.19.3, moment@^2.20.1:
+moment@2.x, moment@^2.19.3, moment@^2.22.2:
   version "2.22.2"
   resolved "http://registry.npm.taobao.org/moment/download/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
 

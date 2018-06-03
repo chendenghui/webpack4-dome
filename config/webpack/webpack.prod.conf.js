@@ -65,7 +65,6 @@ let config = merge(baseWebpackConfig, {
         new BundleAnalyzerPlugin()
     ],
     module: {
-      
         rules: [
             {
                 test: /\.(js|jsx)$/,
