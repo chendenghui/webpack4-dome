@@ -9,7 +9,10 @@ let config = {
 	resolve: {
 		extensions: [".js", ".json", ".jsx", ".css",".pcss"],
 		alias: {
-			BizUtils: path.resolve(__dirname, "app/utils"),
+			BizComponent: path.resolve(__dirname, "../../src/component"),
+			BizUtils: path.resolve(__dirname, "../../src/utils"),
+			BizPublic: path.resolve(__dirname, "../../src/public"),
+			BizAssets: path.resolve(__dirname, "../../src/assets"),
 		}
 	}
 

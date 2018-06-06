@@ -11,9 +11,8 @@ rimraf.sync(entryBuildPath);
 fs.mkdirSync(entryBuildPath);
 const entryContent = data => `import React from 'react';
 import ReactDOM from 'react-dom';
-import Index from '../app/component/${data.path}';
-import Header from '../app/component/common/Header';
-ReactDOM.render([<Header key="Header"/>,<Index key="Index"/>],document.getElementById('app'));`;
+import Index from '../src/views/${data.path}';
+ReactDOM.render([<Index key="Index"/>],document.getElementById('app'));`;
 /*生成webpack entry 入口文件*/
 entry.map((data) => {
 	fs.writeFile(entryBuildPath + "/" + data.name + ".js", entryContent(data), "utf8", function (err) {

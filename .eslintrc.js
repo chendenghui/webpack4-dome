@@ -20,6 +20,7 @@ module.exports = {
       "import/no-extraneous-dependencies": "off",
       "react/no-unused-state": "warn",
       "comma-dangle": "off",
+      "no-undef": "off",
       "react/forbid-prop-types": "warn",
       "react/no-unused-prop-types": "warn",
       "react/prop-types": "warn",

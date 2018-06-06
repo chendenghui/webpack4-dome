@@ -60,7 +60,7 @@ let config = merge(baseWebpackConfig, {
 					"babel-loader",
 				],
 				include: [
-					path.resolve(__dirname, "../../app"),
+					path.resolve(__dirname, "../../src"),
 					path.resolve(__dirname, "../../entryBuild")
 				],
 				exclude: [
@@ -87,7 +87,7 @@ let config = merge(baseWebpackConfig, {
 					},
 				],
 				include: [
-					path.resolve(__dirname, "../../app")
+					path.resolve(__dirname, "../../src")
 				],
 				exclude: [
 					path.resolve(__dirname, "../../node_modules")
@@ -108,7 +108,7 @@ let config = merge(baseWebpackConfig, {
 	/*设置api转发*/
 	devServer: {
 		host: "0.0.0.0",
-		port: 8080,
+		port: 8081,
 		hot: true,
 		inline: true,
 		contentBase: path.resolve(webpackFile.devDirectory),
@@ -123,7 +123,7 @@ let config = merge(baseWebpackConfig, {
 		],
 		/*打开浏览器 并打开本项目网址*/
 		after() {
-			opn("http://localhost:" + this.port);
+			opn("http://127.0.0.1:" + this.port+"/home.html");
 		}
 	}
 });
