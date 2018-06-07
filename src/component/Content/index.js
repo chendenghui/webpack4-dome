@@ -31,14 +31,14 @@ class Content extends Component {
 
 
   Content.PropTypes = {
-      children : PropTypes.oneOfType([
+    children : PropTypes.oneOfType([
         PropTypes.array,
         PropTypes.element,
-      ]),
+    ])
   }
   
   Content.defaultProps = {
-    children: [],
+    children : [],
   };
   
 export default Content;
