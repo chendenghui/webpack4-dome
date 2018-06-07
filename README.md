@@ -1,3 +1,4 @@
+测试readme
 # webpack4-dome
 1.react-hmre实现局部刷新，它主要依赖于react-transform-hmr、react-transform-catch-errors。react-transform-hmr用来实现上面的热加载，而react-transform-catch-errors用来捕获错误，直接展示在页面上，而不用在去控制台查找错误。",
 
