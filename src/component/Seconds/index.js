@@ -37,11 +37,11 @@ class Seconds extends Component {
         return (
             <div className="cont">
                 <div className="top">
-                    <i className="logo"></i>
+                    <i className="logo" />
                     这是{title}
                     Seconds {this.state.seconds}
                 </div>
-                <div className="bottom"></div>
+                <div className="bottom" />
             </div>
 
 

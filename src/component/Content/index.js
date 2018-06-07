@@ -1,8 +1,8 @@
 
 import React,{Component} from 'react';
-import Header from '../Header/index.jsx';
+import Header from 'BizComponent/Header';
 
-import '../../public/common.pcss';
+import 'BizPublic/common.pcss';
 
 class Content extends Component {
 

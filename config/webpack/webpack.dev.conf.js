@@ -6,6 +6,15 @@ const baseWebpackConfig = require("./webpack.base.conf");//基础配置
 const webpackFile = require("./webpack.file.conf");//一些路径配置
 const eslintFormatter = require("react-dev-utils/eslintFormatter");
 
+const moduleCSSLoader = {
+	loader: 'css-loader',
+	options: {
+		modules: true,
+		sourceMap: true,
+		importLoaders: 2,
+		localIdentName: '[path][name]__[local]__[hash:base64:5]'
+	}
+  };
 
 let config = merge(baseWebpackConfig, {
 	/*设置开发环境*/
@@ -43,33 +52,15 @@ let config = merge(baseWebpackConfig, {
 			}
 		}
 	},
-	// eslint: {
-	// 	configFile: "../../.eslintrc.js"
-	// },
 	plugins: [
 		/*设置热更新*/
 		new webpack.HotModuleReplacementPlugin(),
 	],
 	module: {
-        
 		rules: [
 			{
-				test: /\.(js|jsx)$/,
-				use: [
-					"cache-loader",
-					"babel-loader",
-				],
-				include: [
-					path.resolve(__dirname, "../../src"),
-					path.resolve(__dirname, "../../entryBuild")
-				],
-				exclude: [
-					path.resolve(__dirname, "../../node_modules")
-				],
-			},
-			{
-				test: /\.(js|jsx)$/,
 				enforce: "pre",
+				test: /\.(js|jsx)$/,
 				use: [
 					{
 						options: {
@@ -94,11 +85,39 @@ let config = merge(baseWebpackConfig, {
 				],
 			},
 			{
-				test: /\.(css|pcss)$/,
-				loader: "style-loader?sourceMap!css-loader?sourceMap!postcss-loader?sourceMap",
-				exclude: /node_modules/
+				test: /\.(js|jsx)$/,
+				use: [
+					{loader: 'cache-loader'},
+					{loader: 'babel-loader',
+						query:{
+							presets: ['react','es2015'],
+							plugins: [['import',{libraryName: 'antd', style:'css'}]]
+						}
+					}],
+			
+				include: [
+					path.resolve(__dirname, "../../src"),
+					path.resolve(__dirname, "../../entryBuild")
+				],
+				exclude: [
+					path.resolve(__dirname, "../../node_modules")
+				],
 			},
-	
+			{
+				test: /\.(css|pcss)$/,
+				use: [
+					
+					'style-loader','css-loader','postcss-loader'
+				]
+			},
+			{
+				test: /\.less$/,
+				use: ['style-loader', moduleCSSLoader, 'postcss-loader','less-loader']
+			},
+			{
+				test: /\.(scss|sass)$/,
+				use: ['style-loader', 'css-loader', 'sass-loader']
+			},
 			{
 				test: /\.(png|jpg|gif|ttf|eot|woff|woff2|svg|swf)$/,
 				loader: "file-loader?name=[name].[ext]&outputPath=" + webpackFile.resource + "/"
