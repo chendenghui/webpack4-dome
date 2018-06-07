@@ -1,6 +1,7 @@
 
 import React,{Component} from 'react';
 import Header from 'BizComponent/Header';
+import PropTypes from 'prop-types';
 
 import 'BizPublic/common.pcss';
 
@@ -28,4 +29,16 @@ class Content extends Component {
         )}
 }
 
+
+  Content.PropTypes = {
+      children : PropTypes.oneOfType([
+        PropTypes.array,
+        PropTypes.element,
+      ]),
+  }
+  
+  Content.defaultProps = {
+    children: [],
+  };
+  
 export default Content;

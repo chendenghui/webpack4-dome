@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import PropTypes from 'prop-types';
 
 class Seconds extends Component {
 
@@ -50,5 +51,14 @@ class Seconds extends Component {
     }
 
 }
-
+Seconds.propTypes = {
+    // 组件默认值 具体数据格式参照 ant Cascader
+    title: PropTypes.oneOfType([PropTypes.object, PropTypes.array, PropTypes.string]),
+   
+  };
+  
+  Seconds.defaultProps = {
+    title: 'title',
+  };
+  
 export default Seconds;

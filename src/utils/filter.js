@@ -84,18 +84,7 @@ filter.transfer = (data) => {
   return '';
 };
 
-// 供应商
-filter.purchasePlans = (data) => {
-  const supplier = [];
-  if (data && data.length) {
-    data.forEach((item) => {
-      if (item.supplier) {
-        supplier.push(<div>{item.supplier.supplierName}</div>);
-      }
-    });
-  }
-  return supplier;
-};
+
 
 // 价格
 filter.price = (data) => {
