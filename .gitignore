@@ -6,6 +6,7 @@ yarn-error.log
 public/dll
 devBuild/
 entryBuild/
+.cache-loader/
 
 # Editor directories and files
 .idea
