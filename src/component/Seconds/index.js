@@ -4,33 +4,21 @@ import PropTypes from 'prop-types';
 class Seconds extends Component {
 
     constructor(props) {
-
         super(props);
-
         this.state = {seconds:0 };
-
 }
 
     tick() {
-
         this.setState(prevState => ({
-
             seconds: prevState.seconds +1
-
         }));
-
     }
 
     componentDidMount() {
-
         this.interval =setInterval(() =>this.tick(), 1000);
-
     }
-
     componentWillUnmount() {
-
         clearInterval(this.interval);
-
     }
 
     render() {
@@ -44,8 +32,6 @@ class Seconds extends Component {
                 </div>
                 <div className="bottom" />
             </div>
-
-
     );
 
     }

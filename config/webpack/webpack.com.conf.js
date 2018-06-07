@@ -1,5 +1,5 @@
 let titleFun = function(chunkName,title){
-	let titleDef = "XX页";
+	let titleDef = "蜂巢";
 	if(chunkName.indexOf("index") !==-1){
 		return titleDef;
 	}else{
