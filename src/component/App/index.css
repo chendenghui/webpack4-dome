@@ -1,0 +1,35 @@
+:global(body) {
+  font-family: "PingFangSC-Regular", "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,  "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.emptyPage {
+  display: none;
+}
+
+.container {
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+}
+
+.contentWrap {
+  padding-top: 60px;
+  z-index: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  height: 100%;
+}
+.contentWrapMobile {
+  z-index: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.content {
+  margin:16px auto;
+  min-height: 768px;
+  width: 1170px;
+  height: 100%;
+}
+.contentMobile {
+  margin:0px auto;
+  height: 100%;
+}

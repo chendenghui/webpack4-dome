@@ -66,12 +66,12 @@ let config = merge(baseWebpackConfig, {
     ],
     module: {
         rules: [
-            {
-                test: /\.(js|jsx)$/,
-                use: [
-                    'babel-loader',
-                ],
-            },
+            // {
+            //     test: /\.(js|jsx)$/,
+            //     use: [
+            //         'babel-loader',
+            //     ],
+            // },
             {
                 test: /\.(js|jsx)$/,
                 loader: 'babel-loader',
@@ -117,9 +117,9 @@ for (let chunkName in pages) {
 config.plugins.push(new CleanWebpackPlugin([webpackFile.proDirectory], {root: path.resolve(__dirname, '../../'), verbose: true, dry: false}));
 
 let copyObj = [
-/*    {from: './src/public/plugin', to: './plugin'},//一些不需要走webpack的插件
+    {from: './src/public/plugin', to: './plugin'},//一些不需要走webpack的插件
     {from: './src/public/versionTips', to: './versionTips'},//固定不变的浏览器版本提示文件
-    {from: './src/public/file', to: './resource'},//一些固定的文件，如下载文件*/
+    {from: './src/public/file', to: './resource'},//一些固定的文件，如下载文件
     {from: './src/public/img/favicon.ico', to: './'},//网站favicon.ico
 ];
 

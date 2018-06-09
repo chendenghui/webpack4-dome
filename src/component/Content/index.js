@@ -1,24 +1,21 @@
-
 import React,{Component} from 'react';
+import 'antd/dist/antd.css';
 import Header from 'BizComponent/Header';
 import PropTypes from 'prop-types';
+import styles from 'BizPublic/common.css';
 
 import 'BizPublic/common.pcss';
 
 class Content extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         const { children } = this.props;
 
         return (
-            <div className="contentWrap">
+            <div className={styles.contentWrap}>
                 <Header />
-                <div className="content">
-                    <div className="contentContent">
+                <div className={styles.content}>
+                    <div className={styles.contentContent}>
                         {children}
                     </div>
                 </div>

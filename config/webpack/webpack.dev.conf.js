@@ -90,8 +90,9 @@ let config = merge(baseWebpackConfig, {
 					{loader: 'cache-loader'},
 					{loader: 'babel-loader',
 						query:{
-							presets: ['react','es2015'],
-							plugins: [['import',{libraryName: 'antd', style:'css'}]]
+							presets: ['react','es2015','stage-2'],
+							// plugins: [['import',{libraryName: 'antd', style:'css'}]]
+							plugins: ['transform-decorators-legacy','transform-decorators',['import',{libraryName: 'antd', style:'css'}]]
 						}
 					}],
 			
@@ -104,12 +105,29 @@ let config = merge(baseWebpackConfig, {
 				],
 			},
 			{
-				test: /\.(css|pcss)$/,
+				test: /\.(css)$/,
 				use: [
-					
+					'style-loader',moduleCSSLoader,'postcss-loader'
+				]
+			},
+			{
+				test: /\.(pcss)$/,
+				use: [
 					'style-loader','css-loader','postcss-loader'
 				]
 			},
+			// {
+			// 	test: /\.(css)$/,
+			// 	use: [
+			// 		{
+			// 			loader:'css-loader',
+			// 			options: {
+			// 				modules: true,//开启CSS Modules
+			// 				localIdentName: '[path][name]__[local]--[hash:base64:5]'
+			// 			}
+			// 		}
+			// 		]
+			// },
 			{
 				test: /\.less$/,
 				use: ['style-loader', moduleCSSLoader, 'postcss-loader','less-loader']
@@ -133,13 +151,14 @@ let config = merge(baseWebpackConfig, {
 		contentBase: path.resolve(webpackFile.devDirectory),
 		historyApiFallback: true,
 		disableHostCheck: true,
-		proxy: [
-			{
-				context: ["/api/**", "/u/**"],
-				target: "http://192.168.12.100:8080/",
-				secure: false
-			}
-		],
+		proxy: {
+	
+			'/fe/*':{ 
+                target: 'http://home.beta.wormpex.com/',
+                secure: false, // 接受 运行在 https 上的服务
+                changeOrigin: true
+            }
+		},
 		/*打开浏览器 并打开本项目网址*/
 		after() {
 			opn("http://127.0.0.1:" + this.port+"/home.html");

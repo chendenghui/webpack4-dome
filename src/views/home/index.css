@@ -1,0 +1,524 @@
+.boxBorder {
+    display: inline-block;
+    padding: 20px 25px;
+    border-radius: 3px;
+    background-color: #fff;
+    overflow: hidden;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    border: 1px solid #eee;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-color: #1890ff;
+  }
+  
+  .inductionDoc{
+    height: 88px;
+    overflow-y: scroll;
+    flex-wrap:wrap;
+  }
+  
+  .itemContentPage {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+  }
+  
+  .commonApp {
+    width: 368px;
+    height: 168px;
+  }
+  
+  .printerIconSS {
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAAXNSR0IArs4c6QAAAkFJREFUSA3lljFLHEEUx9+bWwMBA7FQMexVSSFBiKCQIt51aip1DYJ2KWLrB0gaC/0CWgt2ShI97US7u4soKJhCSJFUtyIxTQoxmr2b55s7F2dds3t77mKRgbuZ2Xnz/+28fW9mEOooll3YJKL+IFME2Myls4NBNu6YcBtBdRhQzSWAgSANfczQO2FtFDABhBWPHVKKJCx5noV0IkFfPMl8nkYs65rTRMaBXYgErcu9OiSO9v8DjcNbkTXwTanwUgIsEMJzIP5PqiASEhzy93xnSIRFzsNOlWiJFl4QI7ok4qJRBTJNCDGeahL7SYErjuyRUi4rnpan0v7U1vfdsouzAHKKX2MuZ/Z9iOslRo/y7a7WLSkjp4iguQZ2zeKtfVCOpHlEOFUrjRd1raa5t/Zw1cy+55b6JVZ8K02MpAn7VqrGRn/tddDfP68RiL9tY4UAT/HBw43V1t7jmwo+6MjPL0/l+dkeGz6+W+oS0PnZb9brXWt/9UMH+6DgyAkFRMQTru+Stz2ck21XejPBUIJHNQPayZnZYd04Stuy8+tsP8Q73ZXe9WxtpcIcO9l+VnYqLXwT8JSRUr7q6W4z0/SPQ9xRE9bSWd/ezbeNFqXLO5LJuV/VNdiN39TWpLYoeXGD5kE31iFJk85FedKdrXhCELxFwEPgU8AdSKRWpwxzFM9YSWd2GdIVNygoHu5lc7gXqBa94Q7+elS0rFLRc+/lZ6nwmV6LSFCO8o/Vu7yu0UD41eVeDvMtnXNbux4bd94lNlHFFqrBvVMAAAAASUVORK5CYII=')
+  }
+  
+  .printerButton {
+    width:280px;
+    color:#fff;
+    background-color: #5DACF8;
+  }
+  
+  .contactInfoHeader {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .icon {
+    width: 3px;
+    height: 10px;
+    background-color: #5DACF8;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  .iconText {
+    color: #666;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  
+  .commonServicesWrap {
+    width: 785px;
+    height: 180px;
+    overflow: hidden;
+  }
+  .contentMobile {
+    margin: 0 auto;
+  } 
+  .commonServicesWrapMobile {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .commonServices {
+    position: relative;
+  }
+  .iconServices {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+  }
+  
+  .commonServicesContent {
+    display: inline-block;
+    width: 350px;
+    margin: 1px 0;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* 进度条 */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  }
+  ::-webkit-scrollbar-thumb {
+    /* box-shadow: inset 0 0 6px #eef; */
+    background: #d8d8d8;
+  }
+  
+  .commonServicesContent a{
+    font-size: 14px;
+    color:#5DACF8;
+  }
+  
+  .cardHeader {
+    font-size: 16px;
+    color: #666;
+    font-weight: bolder;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    display: -webkit-flex;
+    align-items: center;
+  }
+  .cardTitle {
+    display: inline-block;
+    margin-left: 8px;
+  }
+  .ItemCardServicesDoc {
+    min-height: 725px;
+    position:relative; 
+    margin:0px auto; 
+  }
+  .ItemCardServicesDocMobile {
+    min-height: 180px;
+    position:relative; 
+    margin:0px auto; 
+    column-width:200px;
+    -moz-column-width:200px; /* Firefox */
+    -webkit-column-width:200px; /* Safari 和 Chrome */
+  }
+  .DocWrap {
+    width: 340px;
+    display: inline-block;
+  }
+  .DocHeader {
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    color: #4a4a4a;
+    padding: 0 0 16px 0;
+  }
+  .DocBody {
+    color: #5DACF8;
+    font-size: 14px;
+    padding: 15px 0;
+  }
+  .DocBody p {
+    margin-bottom: 16px;
+  }
+  .DocBody p a {
+    font-size: 14px;
+    color: #5DACF8;
+    letter-spacing:0.2px;
+  }
+  .DocBody address {
+    font-size: 14px;
+  }
+  .IconBoxS {
+    display: inline-block;
+    margin-left: 5px;
+  
+  }
+  .IconBox {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .TagNew{
+    display: inline-block;
+    height: 14px;
+    width: 24px;
+    margin: 0 5px;
+    background-repeat:no-repeat; 
+    background-size:100% 100%;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAAAXNSR0IArs4c6QAAAgdJREFUOBGtVEtIG0EY/mZ2kxiNa7N10YgP0ERQ24qvUnqwehGKtLdeRM+K3ip48NKLLSIexFsPBWlFjyoIgqB4KcWTFAQRWyoSH9SaqnF9xDXTmYHdWDSiwYFhvv/1/f/8s/sT8DW6pudfMAyAoYGBBYQu1UVAtkGwoBD0tIYiYSLIrTj7zgn1VEmTxEVUSiqprPz+yUVOXXBT0Ra7As0VQqHvlS2CwoWQ1ubIdwacm17uueGtRkNgBLneesmlUC+qjXd35rUDBDe1BfvcPV3Es5xBuKhmq+SZoRag1uhDY94XGGl1cpf7u6StOPMNinyvJX6sv4Xf88iJvZLgILaG1f1PeGr0O04CNOZ9xkZ0Gkt/3uN5zjAOYz9R4e+UPsGsFgS1Fv7xqCh70I5o7JcTqzroEljZ/4im/Cn+Hs1S61MLoblL8ORht5RVmoE0NRt/z1ZkO8/jR1CIB4H0F/h98g0WMx22axMI69edLrwsmJGOprWJE2sX81utiLMzXmUHzPMw1qOTqOFv9ONgDG4lE1XZvViODDvkAlxpkW01rTCW9j5IkeGCBw7xW03wPQmPovMqj7FxNA2d93vreB6b5hyy3KUIm7M2hTzJyKqf/ae5QSC8HkJUfovYDV4Jk/irk7Yo4ZZADHGwW5LLKD4ykrYoQZsyioh5dO8JRFsIIeNiDolh9w/INpZmgoDU6wAAAABJRU5ErkJggg==')
+  }
+  .TagHot{
+    display: inline-block;
+    height: 14px;
+    width: 24px;
+    margin: 0 5px;
+    background-repeat:no-repeat; 
+    background-size:100% 100%;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAAAXNSR0IArs4c6QAAAZ5JREFUOBFjZACCbyp6Mgz/Gbr+///vAORKgsQoAM8ZGRkPMDAylHHdufSEEWT4/3//LwINFKLAUGxa3zEyMeozgVxOA8NBFgqBzGaCBgvcBYxKCgxMlmZwPgMjIwNLVCiCj43FxopNlAFkNhNQBiXMmfR1GVj8vBAamJkZWKtKEHw0FpOuFgPbBFAgYAWSIAuIByLCDCx5GQxsPa0MTEb6DAwC/AysZYUMTAZARwHFsQEWbIJMtlYM7POmQaSYEG5g72pm+LN9N8PvnXsZ2Cf3MPyITWH4s3o9A0tYEMPfleuwGcWA1YJ/Zy8w/O7sg2hgYWHg2LaWgYGbi4FJU53hb1IWWPzvnv0MLE72DP/uPWBg+P6d4f/LV1gtQDgPWfrbN4b/z17AMVjqK1Ds02cGRjFRMJdJXZXh35XrDMCYZAAlBFwAuwU4VP/u7Gdgm9rHwL56Mdjl/y5fZfh3/RYDo5QEA2thNlZdjF+VdIFOIBGwsTEw/PpFjKbnJPkAbiJxhgNDjvEAeRbAbcLLeAcqj2hhAaiwWw4qh0CFHQDULndNzpd49AAAAABJRU5ErkJggg==')
+  }
+  .itemLi {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+  }
+  .itemLi a {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  .itemLi a:hover {
+    overflow: auto;
+    white-space: normal;
+  }
+  .newsItemLi {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  .newsItemLi a{
+    font-size: 14px;
+    color: #4a4a4a;
+  }
+  .moduleWrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 160px;
+    font-size:0;
+    text-align: center;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  .point {
+    width: 5px;
+    height: 5px;
+    background-color: #eee;
+    border-radius: 1px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 3px;
+  }
+  .moduleWrap span {
+    width: 220px;
+    height: 160px;
+    border-radius: 16px;
+    display: inline-block;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-background-size: 220px 160px;
+    background-size:220px 160px;
+  }
+  
+  .moduleWrap span:first-child {
+    margin-left: 0;
+  }
+  
+  .tips {
+    font-size: 16px;
+    color: #666666;
+    text-align: center;
+    line-height: 1;
+  }
+  
+  .form {
+    display: none;
+  }
+  
+  .blockWrap a {
+    font-size: 16px;  
+  }
+  .Panel {
+    font-size: 16px;
+  }
+  .Panel:hover {
+    color: #1890ff;
+  }
+  .blockWrap a {
+    color: #666;
+  }
+  .blockWrap a:hover {
+    color: #1E63FF;
+  }
+  .cardTital {
+    color: #eee;
+    font-size: 20px;
+    padding: 10px;
+  }
+  .tools{
+    height:200;
+  }
+  .toolsContent { 
+    width: 100%;
+  }
+  .IconWrap{
+    height:200;
+    background-color:#F5F5F5;
+    padding:10px;
+  }
+  .contentWrap {
+    height: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  .TabsWrap {
+    overflow: hidden;
+    font-size: 20px;  
+    padding: 20px 20px 0 20px;
+   background-color: #fff;
+  }
+  .TabsWrap>div {
+    height: 100%;
+  }
+  .tabContent {
+    padding: 20px;
+    font-size: 18px;  
+    color: rgba(0,0,0,0.65);
+    line-height: 34px;
+  }
+  .tabContent a {
+    font-size: 18px;  
+    color: rgba(0,0,0,0.65);
+  
+  }
+  .cardWrap {
+    margin: 10px;
+    font-size: 18px;  
+    color: rgba(0,0,0,0.65);
+  }
+  
+  .AItem {
+    width: 90px;
+    margin-right: 10px;
+    margin-top: 5px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    list-style-type: none;
+    border-right: 1px solid #d2d5e4;
+  }
+  .AItem:nth-child(3n+0) {
+    border-right: 0px;
+  }
+  .AItem:last-child {
+    border-right: 0px;
+  }
+  .OtherWrap {
+    padding: 15px 0px;
+  }
+  
+  .OtherTital {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .OtherContentCard {
+    min-height: 480px;
+    background-color:#fff;
+  }
+  .OtherContent {
+    color: #666;
+    font-size: 14px;
+  }
+  .OtherWrap a {
+    display: inline-block;
+    font-size: 13px;
+    color:#4a4a4a;
+  }
+  .OtherWrap a:hover {
+    color: #1890ff;
+  }
+  .itemA {
+    font-size: 15px;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .itemA a {
+    font-size: 18px;
+    color: rgba(0,0,0,0.65);
+  }
+  .itemA a:hover {
+    font-size: 18px;
+    color: #1890ff;
+  }
+  .ImgContent { 
+    padding-top: 10px;
+    border-radius: 4px; 
+    margin: 0px auto; 
+    background-color: #fff;
+    height: 220px;
+    overflow-y: scroll;
+  }
+  .PhoneContent { 
+    border-radius: 4px; 
+    margin: 0px auto; 
+    background-color: #fff;
+    max-height: 210px;
+    overflow-y: scroll;
+  }
+  
+  .ImgWrap {
+    cursor:pointer;
+    width: 75px;
+    margin: 0 20px 0 0; 
+    text-align: center;
+    display: inline-block;
+  }
+  .ImgWrapApp {
+    cursor:pointer;
+    width: 65px;
+    margin: 0 1px; 
+    text-align: center;
+    display: inline-block;
+  }
+  .toolsImgWrap {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left; 
+    transition:height 0.5s;
+  -moz-transition: height 0.5s; /* Firefox 4 */
+  -webkit-transition: height 0.5s; /* Safari and Chrome */
+  -o-transition: height 0.5s; /* Opera */
+  }
+  .toolsImgWrapMobile {
+    overflow-x: scroll;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left; 
+    transition:height 0.5s;
+  -moz-transition: height 0.5s; /* Firefox 4 */
+  -webkit-transition: height 0.5s; /* Safari and Chrome */
+  -o-transition: height 0.5s; /* Opera */
+  }
+  .toolsImgWrapApp {
+    margin-top: 15px;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: space-between;
+    text-align: left; 
+    transition:height 0.5s;
+  -moz-transition: height 0.5s; /* Firefox 4 */
+  -webkit-transition: height 0.5s; /* Safari and Chrome */
+  -o-transition: height 0.5s; /* Opera */
+  }
+  .toolsImgWrapAppMobile {
+    margin-top: 15px;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: space-between;
+    text-align: left; 
+    transition:height 0.5s;
+  -moz-transition: height 0.5s; /* Firefox 4 */
+  -webkit-transition: height 0.5s; /* Safari and Chrome */
+  -o-transition: height 0.5s; /* Opera */
+  }
+  
+  .toolsImgOut {
+    width: 67px;
+    padding-top: 0px;
+    margin-left: 7px; 
+    margin-right: 7px; 
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #1E63FF;
+  }
+  
+  .ImgLabel {
+    color: #666;
+    margin-top: 8px;
+    font-size: 14px;
+    display: inline-block;
+    min-width: 65px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  .ImgLabel:hover {
+    color: #1890ff;
+  }
+  
+  .ImgLabelApp {
+    color: #666;
+    font-size: 12px;
+    margin-top: 14px;
+    display: inline-block;
+    min-width: 60px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .ImgLabelApp:hover {
+    color: #1890ff;
+  }
+  
+  .ImgOut {
+    display: inline-block;
+    width: 48px;
+    height: 48px; 
+    border-radius: 5px;
+    background-repeat:no-repeat; 
+    background-size:100% 100%;
+  }
+  .ImgOutApp {
+    display: inline-block;
+    width: 40px;
+    height: 40px; 
+    border-radius: 5px;
+    background-repeat:no-repeat; 
+    background-size:100% 100%;
+  }
+  .printerModleHeader {
+    color:#4A90E2;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+  }
+  
+  

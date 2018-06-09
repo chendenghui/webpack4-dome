@@ -1,0 +1,62 @@
+.container {
+    height: 100%;
+    background-color: #F5F5F5;
+  }
+  .commonServicesWrap {
+    width: 780px;
+    /* height: 168px; */
+    overflow: hidden;
+  }
+  .boxBorder {
+    /* padding: 21px 25px; */
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    overflow: hidden;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+  }
+  .commonServices {
+    position: relative;
+  }
+  .iconServices {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 20px;
+    height: 20px;  
+  }
+  .commonApp {
+    display: inline-block;
+    width: 368px;
+    height: 165px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .titleWrap {
+    font-size: 16px;
+    color: #666;
+    font-weight: bolder;
+    padding: 16px 24px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    border-bottom: 1px solid #eee; 
+
+  }
+  .cardTitleText {
+    display: inline-block;
+    margin-left: 8px;
+  }
+  .cardBody {
+    padding: 0px 25px;
+    height: 100%;
+    width: 100%;
+  }
+  .icon {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+  }

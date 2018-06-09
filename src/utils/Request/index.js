@@ -1,6 +1,6 @@
-import 'worm-fetch';
+
 // import jsonp from 'fetch-jsonp';
-import Notification from 'BizComponent/Notification';
+import {Notification} from 'antd';
 // import { rbacSource } from 'BizConfig/constant';
 import { rbacSource, appSource } from 'BizConfig/constant';
 import { stringify } from 'query-string';

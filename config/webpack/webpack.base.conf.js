@@ -13,6 +13,7 @@ let config = {
 			BizUtils: path.resolve(__dirname, "../../src/utils"),
 			BizPublic: path.resolve(__dirname, "../../src/public"),
 			BizAssets: path.resolve(__dirname, "../../src/assets"),
+			BizConfig: path.resolve(__dirname, "../../src/config"),
 		}
 	}
 
