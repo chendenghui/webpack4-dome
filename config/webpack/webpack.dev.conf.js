@@ -154,7 +154,7 @@ let config = merge(baseWebpackConfig, {
 		proxy: {
 	
 			'/fe/*':{ 
-                target: 'http://home.beta.wormpex.com/',
+                target: 'http://home.beta.xxx.com/',
                 secure: false, // 接受 运行在 https 上的服务
                 changeOrigin: true
             }
