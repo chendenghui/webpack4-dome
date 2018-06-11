@@ -12,13 +12,13 @@
  *    batchUpload({
  *      title: '订单批量导入',
  *      uploadInfo: {
- *        action: '/bach/baseinfo/product/sku/import/v1'
+ *        action: '/xxx/baseinfo/product/sku/import/v1'
  *      },
  *      templateList: [{
- *        downloadUrl: 'http://127.0.0.1/bach-erp/demo/formFive/',
+ *        downloadUrl: 'http://127.0.0.1/erp/demo/formFive/',
  *        fileName: 'Sku导入模asff版1.xls',
  *      }, {
- *        downloadUrl: 'http://127.0.0.1/bach-erp/demo/formFive/',
+ *        downloadUrl: 'http://127.0.0.1/erp/demo/formFive/',
  *        fileName: 'Sku导入模版2.xls',
  *      }],
  *      logInfo: {

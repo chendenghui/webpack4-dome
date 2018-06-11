@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Select } from 'bach-antd';
+import { Select } from 'antd';
 import { observer } from 'mobx-react';
 import store, { changeShowAll } from './store';
 

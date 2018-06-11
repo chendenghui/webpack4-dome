@@ -1,6 +1,6 @@
 /**
  * 时间选择控件
- * demo: /bach-erp/web/Demo/BaseDemo
+ * demo: /erp/web/Demo/BaseDemo
  * 组件支持返回string值 无需手动从moment对象转string
  */
 import React, { Component } from 'react';
