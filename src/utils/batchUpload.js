@@ -6,7 +6,7 @@
  *  具体参考 Common/BatchUpload 和 component/BatchUpload
  *
  * response 格式：
- *  http://wiki.corp.bianlifeng.com/pages/viewpage.action?pageId=11024480
+ *  http://wiki.xxx.xxx.com/pages/viewpage.action?pageId=11024480
  *
  * 例：
  *    batchUpload({
@@ -28,7 +28,7 @@
  *      },
  *      responseFilter(res) { // 理论上不应该使用该方法，督促后端把返回格式调整成规范格式
  *        // 返回数据格式化处理，要求返回格式必须符合规范
- *        // http://wiki.corp.bianlifeng.com/pages/viewpage.action?pageId=11024480
+ *        // http://wiki.xxx.xxx.com/pages/viewpage.action?pageId=11024480
  *      },
  *      success(res) {
  *        // 上传成功，刷新页面
