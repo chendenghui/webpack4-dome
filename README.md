@@ -23,7 +23,7 @@ description: '这是我们的首页'
 2. $ npm run devNew, 根据entry.js的文件创建，html模板文件目录devBuild 和 js文件目录entryBuild，然后进行开发；
 
 # 打包
-$ npm run pack 进行压缩打包
+$ npm run build 进行压缩打包
 
 # npm包检测
 $ npm run check

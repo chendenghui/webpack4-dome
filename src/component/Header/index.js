@@ -6,7 +6,7 @@ const Header = () =>
     <div className={styles.headerWrap}>
         <div className={styles.headerContent}>
             <div className={styles.logo} />
-            <div className={styles.logoText}>蜂巢</div>
+            <div className={styles.logoText}>蜂巢111111</div>
         </div>
     </div>
 ;

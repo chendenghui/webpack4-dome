@@ -9,7 +9,7 @@ const eslintFormatter = require("react-dev-utils/eslintFormatter");
 const moduleCSSLoader = {
 	loader: 'css-loader',
 	options: {
-		modules: true,
+		// modules: true,
 		sourceMap: true,
 		importLoaders: 2,
 		localIdentName: '[path][name]__[local]__[hash:base64:5]'

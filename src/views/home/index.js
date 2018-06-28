@@ -1,9 +1,8 @@
-// import 'es6-shim';
-// import App from 'BizComponent/App';
 import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
 import { observer } from 'mobx-react';
 import Masonry from 'react-masonry-component';
+import 'antd/dist/antd.css';
 import { Row, Col, Tabs, Tooltip, Collapse } from 'antd';
 import Content from 'BizComponent/Content';
 import Svg from 'BizComponent/svg';
@@ -24,7 +23,6 @@ class Home extends Component {
     this.state = {
       containerWidth:'',
       printerModle:false //打印机弹框可见性
-      
     }
   }
 
