@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import 'antd/dist/antd.css';
 import Header from 'BizComponent/Header';
 import PropTypes from 'prop-types';
-import styles from 'BizPublic/common.css';
+import 'BizPublic/common.css';
 
 import 'BizPublic/common.pcss';
 
@@ -12,10 +12,10 @@ class Content extends Component {
         const { children } = this.props;
 
         return (
-            <div className={styles.contentWrap}>
+            <div className='contentWrap'>
                 <Header />
-                <div className={styles.content}>
-                    <div className={styles.contentContent}>
+                <div className='content'>
+                    <div className="contentContent">
                         {children}
                     </div>
                 </div>

@@ -5,14 +5,9 @@ import PropTypes from 'prop-types';
 import { parse } from 'BizUtils/url';
 import MediaQuery from 'react-responsive';
 import { Layout } from 'antd';
-// import 'BizUtils/collection';
-
-// import rbacStore from '../Rbac/store';
 import BizHeader from './Header/index';
-// import 'antd/dist/antd.less';
-// import 'es6-promise/auto';
+import 'antd/dist/antd.css';
 import Popover from './Popover/index';
-
 import styles from './index.css';
 import '../../style/index.scss';
 

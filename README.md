@@ -25,6 +25,9 @@ description: '这是我们的首页'
 # 打包
 $ npm run build 进行压缩打包
 
+# 打包分析
+$ npm run analyz
+
 # npm包检测
 $ npm run check
 
