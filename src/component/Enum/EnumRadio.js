@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Radio } from 'bach-antd';
+import { Radio } from 'antd';
 import { observer } from 'mobx-react';
 import store, { changeShowAll } from './store';
 

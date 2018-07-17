@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const baseWebpackConfig = require("./webpack.base.conf");
 const webpackFile = require('./webpack.file.conf');
 const entry = require("./webpack.entry.conf");
@@ -48,6 +49,15 @@ let config = merge(baseWebpackConfig, {
     },
 
     plugins: [
+        //压缩关闭warning,debugger,console
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+              warnings: false,
+              drop_debugger: true,
+              drop_console: true
+            },
+            sourceMap: true
+          }),
         // extract css into its own file
         new ExtractTextPlugin('css/[name].[md5:contenthash:hex:8].css'),
         // Compress extracted CSS. We are using this plugin so that possible
@@ -66,17 +76,16 @@ let config = merge(baseWebpackConfig, {
     ],
     module: {
         rules: [
-            // {
-            //     test: /\.(js|jsx)$/,
-            //     use: [
-            //         'babel-loader',
-            //     ],
-            // },
             {
                 test: /\.(js|jsx)$/,
-                loader: 'babel-loader',
+                use: [ 'babel-loader'],
                 exclude: /node_modules/,
             },
+            // {
+            //     test: /\.(js|jsx)$/,
+            //     loader: 'babel-loader',
+            //     exclude: /node_modules/,
+            // },
             {
                 test: /\.(css|pcss)$/,
                 use: ExtractTextPlugin.extract({

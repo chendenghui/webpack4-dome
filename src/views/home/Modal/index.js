@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
-import { Modal,Form,Select,Icon,Button,Radio} from 'antd';
+import { Modal,Form,Select,Icon,Button,Radio } from 'antd';
 
 import store from '../store';
 import storeS from './store';
@@ -20,9 +19,9 @@ class DeviceModel extends Component {
             officeNameAble:true,
             printerAble:true,
             downloadBtnAble:true,
-            officeNameValue:'',
-            printerValue:'',
-            cityNameValue:'',
+            // officeNameValue:'',
+            // printerValue:'',
+            // cityNameValue:'',
             sysType: '0'
         }
     }
@@ -52,7 +51,6 @@ class DeviceModel extends Component {
         this.props.form.setFieldsValue({
             fileUrl: {key:'',label:''},
             officeName: '',
-            fileUrl: {key:'',label:''}
         })
     }
   }
@@ -178,9 +176,7 @@ class DeviceModel extends Component {
                 >
                   {getFieldDecorator('cityCode',{
                     rules:[{required:false,message:'请选择'}]
-                    
-                  })
-                   (<Select className="w280" size="default"
+                  })(<Select className="w280" size="default"
                         allowClear
                         labelInValue
                         onChange={this.handleCitySelectChange}
@@ -199,8 +195,7 @@ class DeviceModel extends Component {
                 >
                   {getFieldDecorator('officeName',{
                     rules:[{required:false,message:'请选择'}]
-                  })
-                   (<Select className="w280" size="default"
+                  })(<Select className="w280" size="default"
                         allowClear
                         onChange={this.handleOfficeSelectChange}
                         disabled={this.state.officeNameAble}
@@ -219,8 +214,7 @@ class DeviceModel extends Component {
                 >
                   {getFieldDecorator('fileUrl',{
                     rules:[{required:false,message:'请选择'}]
-                  })
-                   (<Select className="w280" size="default"
+                  })(<Select className="w280" size="default"
                         allowClear
                         labelInValue
                         onChange={this.handlePrinterSelectChange}
@@ -258,7 +252,5 @@ class DeviceModel extends Component {
     );
   }
   }
-
-
 
 export default DeviceModel;

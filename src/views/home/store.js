@@ -37,7 +37,7 @@ class HomeStore {
             break;
             case '研发内部系统': this.internalSystem = item.message;
             break;
-            default : null;
+            default: null;
           }
        })
       //  console.log(this.commentServices)

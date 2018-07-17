@@ -22,12 +22,12 @@ class TabController extends Component {
     }
 
     render(){
+        const { children, titleMoreDomShow } = this.props;
         return (
             <div>
                 <ul className="itemContainer clearfix">
-                    {/* <div className="link-bar" /> */}
                     {
-                        React.Children.map(this.props.children, (element,index) => {
+                        React.Children.map(children, (element,index) => {
                             return (
                                 <li
                                     className={ this.itemNav(index) } 
@@ -38,13 +38,13 @@ class TabController extends Component {
                             )
                         })
                     }
-                    {
-                        this.props.titleMoreDomShow ?
+                    {/* {
+                        titleMoreDomShow ?
                             <li className={'item-title-more'}>
                                 {this.props.children[this.state.current].props.titleMoreDom}
                             </li>
                         :null
-                    }
+                    } */}
 
                 </ul>
       
@@ -62,11 +62,12 @@ class TabController extends Component {
     }
 }
 
-TabController.PropTypes = {
+TabController.propTypes = {
     children : PropTypes.oneOfType([
         PropTypes.array,
         PropTypes.element,
     ]),
+    titleMoreDomShow: PropTypes.bool,
     titleDom : PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.element,
@@ -75,15 +76,14 @@ TabController.PropTypes = {
         PropTypes.string,
         PropTypes.element,
     ]),
-    titleMoreDomShow: PropTypes.bool,
 
   }
   
-  TabController.defaultProps = {
+TabController.defaultProps = {
     children : [],
     titleDom : 'title',
     titleMoreDom: <span>更多</span>,
     titleMoreDomShow : false
-  };
+};
   
   export default TabController;

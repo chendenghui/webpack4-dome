@@ -15,15 +15,15 @@ module.exports = {
         },
         "sourceType": "module"
     },
-    "plugins": [
-        "react"
-    ],
+    "parser": "babel-eslint",
+    "plugins": [ "react"],
     "rules": {
       "function-paren-newline": "off",
       "import/no-extraneous-dependencies": "off",
       "react/no-unused-state": "warn",
       "comma-dangle": "off",
       "no-undef": "off",
+      "no-unused-expressions": "off",
       "react/forbid-prop-types": "warn",
       "react/no-unused-prop-types": "warn",
       "react/prop-types": "warn",
@@ -35,6 +35,6 @@ module.exports = {
       "no-unused-vars": "warn",
       "no-path-concat": 1,
       "max-len": 0,//关闭单行字符长度限制
-      //"no-path-concat": 0,//node中不能使用__dirname或__filename做路径拼接
+      "no-path-concat": 0,//node中不能使用__dirname或__filename做路径拼接
     }
 };

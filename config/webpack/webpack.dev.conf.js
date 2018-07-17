@@ -107,7 +107,7 @@ let config = merge(baseWebpackConfig, {
 			{
 				test: /\.(css)$/,
 				use: [
-					'style-loader',moduleCSSLoader,'postcss-loader'
+					'style-loader',moduleCSSLoader
 				]
 			},
 			{
@@ -116,21 +116,10 @@ let config = merge(baseWebpackConfig, {
 					'style-loader','css-loader','postcss-loader'
 				]
 			},
-			// {
-			// 	test: /\.(css)$/,
-			// 	use: [
-			// 		{
-			// 			loader:'css-loader',
-			// 			options: {
-			// 				modules: true,//开启CSS Modules
-			// 				localIdentName: '[path][name]__[local]--[hash:base64:5]'
-			// 			}
-			// 		}
-			// 		]
-			// },
+	
 			{
 				test: /\.less$/,
-				use: ['style-loader', moduleCSSLoader, 'postcss-loader','less-loader']
+				use: ['style-loader', moduleCSSLoader,'less-loader']
 			},
 			{
 				test: /\.(scss|sass)$/,

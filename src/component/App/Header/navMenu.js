@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
-import { Menu, Icon } from 'bach-antd';
+import { Menu, Icon } from 'antd';
 
 import store from '../store';
 
