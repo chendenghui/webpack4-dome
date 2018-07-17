@@ -31,7 +31,8 @@ module.exports = {
       "class-methods-use-this": "off",
       "react/jsx-filename-extension": "off",
       "react/prefer-stateless-function": "off",
-      "no-console": "off",
+      "no-console": process.env.NODE_ENV === 'production' ? 2 : 0,
+      'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
       "no-unused-vars": "warn",
       "no-path-concat": 1,
       "max-len": 0,//关闭单行字符长度限制

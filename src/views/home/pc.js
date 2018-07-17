@@ -17,7 +17,9 @@ const TabPane = Tabs.TabPane;
 class Pc extends Component {
     
     handleprinter=() => {
-        store.printerModle=true //弹框可见
+      debugger;
+      console.log(1111);
+      store.printerModle=true //弹框可见
     }
 
   render() {

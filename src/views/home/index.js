@@ -8,6 +8,10 @@ import Moddle from './moddle';
 
 @observer
 class Home extends Component {
+  componentDidMount() {
+    
+    console.log(333);
+  }
 
   render() {
     return (
