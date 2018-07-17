@@ -58,7 +58,7 @@ class Store {
   fetch() {
     if (this.enumList.length) {
       Request
-      .post('/bach/baseinfo/goblin/dict/list/v1', {
+      .post('/xxx/baseinfo/goblin/dict/list/v1', {
         data: {
           type: this.enumList,
         },

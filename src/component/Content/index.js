@@ -12,10 +12,10 @@ class Content extends Component {
         const { children } = this.props;
 
         return (
-            <div className={styles.contentWrap}>
+            <div className='contentWrap'>
                 <Header />
-                <div className={styles.content}>
-                    <div className={styles.contentContent}>
+                <div className='content'>
+                    <div className="contentContent">
                         {children}
                     </div>
                 </div>

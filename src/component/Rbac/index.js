@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import store from './store.js';
 
-@observer
+observer
 class Rbac extends Component {
   static propTypes = {
     uri: PropTypes.string.isRequired,

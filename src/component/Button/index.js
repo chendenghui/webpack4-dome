@@ -1,6 +1,6 @@
 /**
  * 列表页的操作：
- * demo: /bach-erp/web/Demo/BaseDemo
+ * demo: /erp/web/Demo/BaseDemo
  * 跳转可以设置target参数
  */
 import React, { Component } from 'react';

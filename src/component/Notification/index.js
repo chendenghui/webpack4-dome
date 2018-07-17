@@ -7,7 +7,7 @@ import React from 'react';
 import Notification from 'rc-notification';
 import { Alert } from 'antd';
 
-const prefixCls = 'bach-ant-notification';
+const prefixCls = 'ant-notification';
 const messageMap = {
   info: '帮助信息',
   success: '已成功！',

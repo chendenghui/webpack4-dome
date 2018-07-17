@@ -18,22 +18,22 @@
  *    noticeGoto(content, [duration,] pathname, param, hash) 通知提示后跳转地址
  *
  * 示例
- *    // location.href = 'http://bachman.wormpex.com/bach-xx/web/Shop/Detail?state=view';
+ *    // location.href = 'http://bachman.xxx.com/xx/web/Shop/Detail?state=view';
  *    import router from '$utils/router';
  *    router.parse(); // {state: view}
  *    router.stringify({a, 1, b: 'b'}); // a=1&b=b 等同于 queryString.stringify
  *    router.reload(); // 刷新页面
  *    router.close(); // 关闭页面
  *    // 非页面地址
- *    router.buildUrl('/scm/supplier/api/export/v1'); // http://bachman.wormpex.com/scm/supplier/api/export/v1
+ *    router.buildUrl('/scm/supplier/api/export/v1'); // http://bachman.xxx.com/scm/supplier/api/export/v1
  *    // 外部地址
  *    router.buildUrl('https://www.baidu.com'); // https://www.baidu.com
  *    // 页面地址，构建 A 标签 href 属性
- *    router.buildUrl('/Shop/List'); // http://bachman.wormpex.com/bach-xx/web/Shop/List
- *    router.buildUrl('/Shop/List'); // http://bachman.wormpex.com/bach-xx/web/Shop/List
- *    router.buildUrl('/Shop/List', {id: 1, ids: [1,2]}); // http://bachman.wormpex.com/bach-xx/web/Shop/List?id=1&ids=1&ids=2
- *    router.buildUrl('/Shop/List', {id:1}, 'hash'); // http://bachman.wormpex.com/bach-xx/web/Shop/List?id=1#hash
- *    router.buildUrl('/Shop/List', '', 'hash'); // http://bachman.wormpex.com/bach-xx/web/Shop/List#hash
+ *    router.buildUrl('/Shop/List'); // http://bachman.xxx.com/xx/web/Shop/List
+ *    router.buildUrl('/Shop/List'); // http://bachman.xxx.com/xx/web/Shop/List
+ *    router.buildUrl('/Shop/List', {id: 1, ids: [1,2]}); // http://bachman.xxx.com/xx/web/Shop/List?id=1&ids=1&ids=2
+ *    router.buildUrl('/Shop/List', {id:1}, 'hash'); // http://bachman.xxx.com/xx/web/Shop/List?id=1#hash
+ *    router.buildUrl('/Shop/List', '', 'hash'); // http://bachman.xxx.com/xx/web/Shop/List#hash
  *    router.goto(pathname, param, hash); // 当前页面跳转到 buildUrl 后的地址
  *    router.open(pathname, param, hash); // 新页面打开 buildUrl 后的地址
  */
